@@ -1,0 +1,313 @@
+{
+  "resourceType": "Bundle",
+  "id": "4d411439-fdd9-4f5c-8d77-28e12b2fdd06",
+  "meta": {
+    "profile": [
+      "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Certificate-Document"
+    ]
+  },
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "af26c517-291d-489f-8753-bbd18b51748b",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Certificate"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "64297-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "172353e2-f0b2-4bd2-a865-b1256197ca19"
+        },
+        "date": "2019-09-13T17:28:52+00:00",
+        "attester": [
+          {
+            "mode": [
+              "legal"
+            ],
+            "party": {
+              "reference": "fc0fb671-8033-46df-bda2-f418d160fcf1"
+            }
+          }
+        ],
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "172353e2-f0b2-4bd2-a865-b1256197ca19"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "fc0fb671-8033-46df-bda2-f418d160fcf1"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "84eb65e1-8eea-4f9e-a8f0-305ec1fa1013"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "7e800c5b-ff47-4eec-8975-0490171cd696"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "b24bbb31-97b0-4c75-bbdf-24934d9ab6e6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "172353e2-f0b2-4bd2-a865-b1256197ca19",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "172353e2-f0b2-4bd2-a865-b1256197ca19",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Decedent"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3"
+                }
+              },
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3"
+                }
+              },
+              {
+                "url": "text"
+              }
+            ]
+          },
+          {
+            "url": "http://www.hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2186-5"
+                }
+              },
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2186-5"
+                }
+              },
+              {
+                "url": "text"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "family": "Doe",
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "birthDate": "1960-01-01",
+        "address": [
+          {
+            "line": [
+              "987 Johnson Trail"
+            ],
+            "postalCode": "35777"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "fc0fb671-8033-46df-bda2-f418d160fcf1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fc0fb671-8033-46df-bda2-f418d160fcf1",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Certifier"
+          ]
+        },
+        "name": [
+          {
+            "family": "Davis",
+            "given": [
+              "Greg"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1516 6th Ave S #220"
+            ],
+            "city": "Birmingham",
+            "state": "AL",
+            "postalCode": "35233"
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "value": "1234567890"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://www.hl7.org/fhir/v2/0360/2.7",
+                  "code": "MD",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "84eb65e1-8eea-4f9e-a8f0-305ec1fa1013",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "84eb65e1-8eea-4f9e-a8f0-305ec1fa1013",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Autopsy-Performed-Indicator"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85699-7",
+              "display": "Autopsy was performed"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "172353e2-f0b2-4bd2-a865-b1256197ca19"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69436-4",
+                  "display": "Autopsy results available"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                  "code": "Y",
+                  "display": "Yes"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "7e800c5b-ff47-4eec-8975-0490171cd696",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7e800c5b-ff47-4eec-8975-0490171cd696",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/decedentAge"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "30525-0",
+              "display": "AGE"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "172353e2-f0b2-4bd2-a865-b1256197ca19"
+        },
+        "valueQuantity": {
+          "value": 59,
+          "unit": "years"
+        }
+      }
+    },
+    {
+      "fullUrl": "b24bbb31-97b0-4c75-bbdf-24934d9ab6e6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b24bbb31-97b0-4c75-bbdf-24934d9ab6e6",
+        "meta": {
+          "profile": [
+            "http://www.hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Manner-of-Death"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69449-7",
+              "display": "Manner of death"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27935005",
+              "display": "Homicide"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
